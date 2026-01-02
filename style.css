@@ -221,6 +221,7 @@ section h1{
     opacity: 0;
     pointer-events: none;
     transition: .5s;
+    
 }
 
 .profile-box.show .dropdown{
@@ -232,7 +233,7 @@ section h1{
 .profile-box .dropdown a{
     padding: 6px 12px;
     border-radius: 4px;
-    color: #222;
+    color: #222222c4;
     text-decoration: none;
     font-weight: 500;
     margin: 2px 0;
