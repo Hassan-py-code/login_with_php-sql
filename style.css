@@ -192,6 +192,7 @@ section h1{
     color: #222;
     cursor: pointer;
     z-index: 1;
+    
 
 }
 
@@ -231,6 +232,7 @@ section h1{
 }
 
 .profile-box .dropdown a{
+
     padding: 6px 12px;
     border-radius: 4px;
     color: #222222c4;
