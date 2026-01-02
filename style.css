@@ -79,7 +79,13 @@ section h1{
     margin: auto;
     display: flex;
     align-items: center;
-    transition: height .2s ease;
+    overflow: hidden;
+    transform: scale(0);
+    transition: height .2s ease , transform .5s ease;
+}
+
+.auth-modal.show{
+    transform: scale(1);
 }
 
 .auth-modal.slide{
@@ -92,7 +98,8 @@ section h1{
     padding: 40px;
 }
 
-.auth-modal .form-box.login{
+.auth-modal .form-box.login,
+.auth-modal.slide .form-box.register{
      transform: translateX(0);
      transition: transform .18s ease;
 } 
@@ -186,4 +193,48 @@ section h1{
     cursor: pointer;
     z-index: 1;
 
+}
+
+.profile-box .avatar-circle{
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 24px;
+    color: #222;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-box .dropdown{
+    position: absolute;
+    top: 58px;
+    right: 100px;
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.profile-box.show .dropdown{
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.profile-box .dropdown a{
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 2px 0;
+    transition: .2s ;
 }
