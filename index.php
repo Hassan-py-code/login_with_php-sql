@@ -41,6 +41,13 @@
          <H1>Hi frontend</H1>
    </section>
 
+   <div class="alert-box" style="display: none;">
+     <div class="alert success">
+           <i class="fa-solid fa-circle-check"></i>
+           <span>Registration Successful</span>
+     </div>
+   </div>
+
    <div class="auth-modal">
          
           <button type="button" class="close-btn-modal" ><i class="fa-solid fa-xmark"></i></button>
@@ -48,7 +55,7 @@
 
       <div class="form-box login">
          <h2>login</h2>
-         <form action="#">
+         <form action="auth_process.php" method="post">
             <div class="input-box">
                 <input type="email" name="email" placeholder="Email" required>
                 <i class="fa-regular fa-envelope"></i>
@@ -66,7 +73,7 @@
         
       <div class="form-box register">
          <h2>Register</h2>
-         <form action="#">
+         <form action="auth_process.php" method="post">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Name" required>
                <i class="fa-regular fa-user"></i>
